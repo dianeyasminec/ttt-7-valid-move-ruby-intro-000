@@ -9,10 +9,13 @@ def position_taken? (board=[],index=0)
 
 end
 
- def valid_move?
-    if position_taken?
-        execute something
+ def valid_move? (board=[],index=0)
+    if index.between?(0,8) && position_taken?(board,index)
+      return true
     else
-        execute something else
+      return false
     end
-some_new_fabulous_method
+  end
+  
+        
+    
