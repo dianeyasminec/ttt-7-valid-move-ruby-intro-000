@@ -1,7 +1,12 @@
-def some_new_fabulous_method
-    if position_taken?
-        execute something
-    else
-        execute something else
+def position_taken (board=[],index=0)
+  if board[index]== " " || board[index]== "" || board[index]== nil
+    return false
+  else
+    if board[index]=="X" || board[index]=="O"
+      return true
     end
-some_new_fabulous_method
+  end
+
+end
+board=[1,"",2,4]
+position_taken?
