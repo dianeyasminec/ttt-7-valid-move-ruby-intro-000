@@ -8,5 +8,11 @@ def position_taken? (board=[],index=0)
   end
 
 end
-board=[1,"",2,4]
-position_taken?
+
+ def valid_move?
+    if position_taken?
+        execute something
+    else
+        execute something else
+    end
+some_new_fabulous_method
